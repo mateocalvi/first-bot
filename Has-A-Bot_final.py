@@ -140,6 +140,7 @@ async def meme(ctx):
     await ctx.send(random.choice(listaMemes))
 
 # Obtener mi IP pública para conectarse al servidor
+# Sólo funciona cuando el archivo se ejecuta de forma local
 @bot.command()
 async def ip(ctx):
     ip = get('https://api.ipify.org').text
